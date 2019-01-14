@@ -110,6 +110,29 @@
       </section>
 
       <section>
+        <v-layout>
+          <v-flex xs12 sm8 offset-sm2>
+            <v-card>
+              <v-container grid-list-sm fluid>
+                <v-layout row wrap>
+                  <v-flex v-for="n in 6" :key="n" xs4 d-flex>
+                    <v-card flat tile class="d-flex">
+                      <v-img :src="`./assets/gallery/gallery (${n}).jpg`" :lazy-src="`./assets/gallery/gallery (${n}).jpg`"
+                        aspect-ratio="1" class="grey lighten-2">
+                        <v-layout slot="placeholder" fill-height align-center justify-center ma-0>
+                          <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+                        </v-layout>
+                      </v-img>
+                    </v-card>
+                  </v-flex>
+                </v-layout>
+              </v-container>
+            </v-card>
+          </v-flex>
+        </v-layout>
+      </section>
+
+      <section>
         <v-parallax src="assets/color-paint-cans-dark.jpg" height="400">
           <v-layout column align-center justify-center>
             <div class="headline white--text mb-3 text-xs-center">Let us help you with your future painting projects.</div>
@@ -145,13 +168,10 @@
             </v-flex>
             <v-flex xs12 sm4 offset-sm1>
               <v-card class="elevation-0 transparent">
-                <v-card-title primary-title class="layout justify-center">
-                  <div class="headline">Contact Information</div>
-                </v-card-title>
-                <!-- <v-card-text>
-                  Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
-                </v-card-text> -->
                   <v-list two-line>
+                    <v-toolbar dark class="blue darken-2">
+                      <v-toolbar-title>Contact Information</v-toolbar-title>
+                    </v-toolbar>
                     <v-list-tile @click="">
                       <v-list-tile-action>
                         <v-icon color="indigo">phone</v-icon>
@@ -195,34 +215,6 @@
                       </v-list-tile-content>
                     </v-list-tile>
                   </v-list>
-                <!-- <v-list class="transparent">
-                  <v-list-tile>
-                    <v-list-tile-action>
-                      <v-icon class="blue--text text--lighten-2">phone</v-icon>
-                    </v-list-tile-action>
-                    <v-list-tile-content>
-                      <v-list-tile-title>(818) 647-5638</v-list-tile-title>
-                    </v-list-tile-content>
-                  </v-list-tile>
-                  <v-list-tile>
-                    <v-list-tile-action>
-                      <v-icon class="blue--text text--lighten-2">place</v-icon>
-                    </v-list-tile-action>
-                    <v-list-tile-content>
-                      <v-list-tile-title>15113 Burton St
-                      Los Angeles, CA 91402
-                      Panorama City</v-list-tile-title>
-                    </v-list-tile-content>
-                  </v-list-tile>
-                  <v-list-tile>
-                    <v-list-tile-action>
-                      <v-icon class="blue--text text--lighten-2">email</v-icon>
-                    </v-list-tile-action>
-                    <v-list-tile-content>
-                      <v-list-tile-title>javierlopezfredy199@gmail.com</v-list-tile-title>
-                    </v-list-tile-content>
-                  </v-list-tile>
-                </v-list> -->
               </v-card>
             </v-flex>
           </v-layout>
@@ -234,9 +226,6 @@
           <v-flex xs12>
             <div class="white--text ml-3">
               2019
-              <!-- <v-icon class="red--text">favorite</v-icon>
-              by <a class="white--text" href="https://vuetifyjs.com" target="_blank">Vuetify</a>
-              and <a class="white--text" href="https://github.com/vwxyzjn">Costa Huang</a> -->
             </div>
           </v-flex>
         </v-layout>
