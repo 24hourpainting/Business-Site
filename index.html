@@ -185,9 +185,29 @@
                 <v-card-title primary-title class="layout justify-center">
                   <div class="headline">Stay Connected with us</div>
                 </v-card-title>
-                <v-card-actions>
-                  <v-btn v-for="icon in icons" :href="icon.url" target="blank" flat icon fab dark :color="icon.color"><i :class="icon.name"></i></v-btn>
-                </v-card-actions>
+                  <v-container>
+                    <v-layout justify-center>
+                      <v-flex xs12>
+                        <v-tooltip 
+                          bottom
+                          v-for="icon in icons">
+                          <v-btn
+                            :href="icon.url"
+                            :color="icon.color"
+                            target="blank"
+                            class="elevation-5"
+                            slot="activator"
+                            flat
+                            fab
+                            dark
+                          >
+                            <i :class="icon.name"></i>
+                          </v-btn>
+                          <span>{{icon.tooltip}}</span>
+                      </v-tooltip>
+                      </v-flex>
+                    </v-layout>
+                  </v-container>
               </v-card>
             </v-flex>
             <v-flex xs12 sm4 offset-sm1>
@@ -267,16 +287,24 @@
         title: '24HrPaintingServices',
         icons: [{ name: 'fab fa-facebook fa-2x',
                   url:'https://www.facebook.com/24horas199/',
-                  color:'blue' },
-                { name: 'fab fa-yelp fa-2x',
-                  url: 'https://www.yelp.com/biz/24hr-painting-services-los-angeles-2',
-                  color: 'red' },
-                { name: 'fas fa-thumbtack fa-2x',
-                  url: 'https://www.thumbtack.com/-Van-Nuys-CA/service/2404480',
-                  color: 'grey' },
+                  color:'blue',
+                  tooltip:'Facebook' },
                 { name: 'fab fa-instagram fa-2x',
                   url: 'https://instagram.com/javierlopezfred199?utm_source=ig_profile_share&igshid=u32rvjvhubrh',
-                  color: 'pink' },]
+                  color: 'pink',
+                  tooltip:'Instagram' },
+                { name: 'fab fa-yelp fa-2x',
+                  url: 'https://www.yelp.com/biz/24hr-painting-services-los-angeles-2',
+                  color: 'red',
+                  tooltip:'Yelp' },
+                { name: 'fas fa-thumbtack fa-2x',
+                  url: 'https://www.thumbtack.com/-Van-Nuys-CA/service/2404480',
+                  color: 'grey',
+                  tooltip:'Thumbtack' },
+                { name: 'fab fa-houzz fa-2x',
+                  url: 'https://www.houzz.com/pro/fredy-navarro59/24hr-painting-services',
+                  color: 'green',
+                  tooltip: 'Houzz'},]
       }
     }
   })
