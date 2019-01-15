@@ -8,12 +8,9 @@
   <link href="https://unpkg.com/vuetify/dist/vuetify.min.css" rel="stylesheet">
 </head>
 <body>
- <span id="app">
+ <div id="app">
    <v-app light>
     <v-toolbar class="white">
-      <!-- <v-avatar :tile="tile" :size="60" color="grey lighten-4">
-        <img src="assets/24hrLogo.png" alt="avatar">
-      </v-avatar> -->
       <v-toolbar-title v-text="title"></v-toolbar-title>
     </v-toolbar>
     <v-content>
@@ -25,7 +22,6 @@
             justify-center
             class="white--text"
           >
-            <!-- <img src="assets/vuetify.png" alt="Vuetify.js" height="200"> -->
             <h1 class="white--text mb-2 display-1 text-xs-center">Painting services based in Panorama City</h1>
             <div class="subheading mb-3 text-xs-center">Open 24 Hours</div>
             <v-btn
@@ -50,9 +46,6 @@
           <v-flex xs12 sm4 class="my-3">
             <div class="text-xs-center">
               <h2 class="headline">What do we do?</h2>
-              <!-- <span class="subheading">
-                Cras facilisis mi vitae nunc 
-              </span> -->
             </div>
           </v-flex>
           <v-flex xs12>
@@ -156,27 +149,10 @@
         </v-layout>
       </section>
 
-      <!-- <section>
-        <v-layout>
-          <v-flex xs12 sm8 offset-sm2>
-            <v-card>
-              <v-container grid-list-sm fluid>
-                <span class="yelp-review" data-review-id="sCrHLbqidbuAwtlayKZCNQ" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=TSGcKeXexKuPx5afe4oHig"
-                    rel="nofollow noopener">Amanda O.</a>'s <a href="https://www.yelp.com/biz/24hr-painting-services-los-angeles-2?hrid=sCrHLbqidbuAwtlayKZCNQ"
-                    rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/HmPl9VXWhH7c3yN95f10Ow" rel="nofollow noopener">24Hr
-                    painting services</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a>
-                  <script async="async" src="https://www.yelp.com/embed/widgets.js" type="text/javascript"></script></span>
-              </v-container>
-            </v-card>
-          </v-flex>
-        </v-layout>
-      </section> -->
-
       <section>
         <v-parallax src="assets/color-paint-cans-dark.jpg" height="400">
           <v-layout column align-center justify-center>
             <div class="headline white--text mb-3 text-xs-center">Let us help you with your future painting projects.</div>
-            <!-- <em>Click below to create an appointment</em> -->
             <v-btn
               class="blue lighten-2 mt-5"
               dark
