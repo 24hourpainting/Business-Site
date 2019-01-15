@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>24 Hour Painting Services Serving the greater Los Angeles Area</title>
+  <title>24HrPaintingServices for the greater Los Angeles Area</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
   <link href="https://unpkg.com/vuetify/dist/vuetify.min.css" rel="stylesheet">
 </head>
 <body>
- <div id="app">
+ <span id="app">
    <v-app light>
     <v-toolbar class="white">
       <!-- <v-avatar :tile="tile" :size="60" color="grey lighten-4">
@@ -127,10 +127,50 @@
                   </v-flex>
                 </v-layout>
               </v-container>
+
+              <v-container grid-list-md>
+                <v-layout row wrap>
+                  <v-flex xs12 sm4>
+                    <v-card>
+                      <v-img :src="`./assets/yelp.jpg`"></v-img>
+                    </v-card>
+                  </v-flex>
+                  <v-flex xs12 sm8>
+                    <v-card>
+                      <v-card-title><h1>Visit our page on yelp!</h1></v-card-title>
+                      <v-layout>
+                        <v-flex xs12>
+                          <span class="yelp-review" data-review-id="sCrHLbqidbuAwtlayKZCNQ" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=TSGcKeXexKuPx5afe4oHig"
+                              rel="nofollow noopener">Amanda O.</a>'s <a href="https://www.yelp.com/biz/24hr-painting-services-los-angeles-2?hrid=sCrHLbqidbuAwtlayKZCNQ"
+                              rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/HmPl9VXWhH7c3yN95f10Ow" rel="nofollow noopener">24Hr
+                              painting services</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a>
+                            <script async="async" src="https://www.yelp.com/embed/widgets.js" type="text/javascript"></script></span>
+                        </v-flex>
+                      </v-layout>
+                    </v-card>
+                  </v-flex>
+                </v-layout>
+              </v-container>
             </v-card>
           </v-flex>
         </v-layout>
       </section>
+
+      <!-- <section>
+        <v-layout>
+          <v-flex xs12 sm8 offset-sm2>
+            <v-card>
+              <v-container grid-list-sm fluid>
+                <span class="yelp-review" data-review-id="sCrHLbqidbuAwtlayKZCNQ" data-hostname="www.yelp.com">Read <a href="https://www.yelp.com/user_details?userid=TSGcKeXexKuPx5afe4oHig"
+                    rel="nofollow noopener">Amanda O.</a>'s <a href="https://www.yelp.com/biz/24hr-painting-services-los-angeles-2?hrid=sCrHLbqidbuAwtlayKZCNQ"
+                    rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/HmPl9VXWhH7c3yN95f10Ow" rel="nofollow noopener">24Hr
+                    painting services</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a>
+                  <script async="async" src="https://www.yelp.com/embed/widgets.js" type="text/javascript"></script></span>
+              </v-container>
+            </v-card>
+          </v-flex>
+        </v-layout>
+      </section> -->
 
       <section>
         <v-parallax src="assets/color-paint-cans-dark.jpg" height="400">
@@ -240,7 +280,7 @@
     el: '#app',
     data () {
       return {
-        title: '24 Hour Painting Services'
+        title: '24HrPaintingServices'
       }
     }
   })
