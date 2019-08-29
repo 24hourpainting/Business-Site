@@ -1,1 +1,0 @@
-# Vuetify-router-boilerplate
