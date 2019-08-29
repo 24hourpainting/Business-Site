@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Business-Site/precache-manifest.6c8c58fda25d1d1c0233ba8bc927b0fe.js"
+  "/Business-Site/precache-manifest.1b3b51ef7220fd6c086ed10b4e861232.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "vuetify-router-boilerplate"});
