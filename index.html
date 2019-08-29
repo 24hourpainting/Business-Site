@@ -18,21 +18,11 @@
     </v-toolbar>
     <v-content>
       <section>
-        <v-parallax src="assets/banner.jpg" height=400>
-          <v-layout
-            column
-            align-center
-            justify-center
-            class="white--text"
-          >
+          <v-parallax src="./assets/banner.jpg" height=400>
+            <v-layout column align-center justify-center class="white--text">
             <h1 class="white--text mb-2 display-1 text-xs-center">Painting services based in Panorama City</h1>
             <div class="subheading mb-3 text-xs-center">Open 24 Hours</div>
-            <v-btn
-              class="blue lighten-2 mt-5"
-              dark
-              large
-              href="/pre-made-themes"
-            >
+              <v-btn class="blue lighten-2 mt-5" dark large href="/pre-made-themes">
               Get Started
             </v-btn>
           </v-layout>
@@ -40,12 +30,7 @@
       </section>
 
       <section>
-        <v-layout
-          column
-          wrap
-          class="my-5"
-          align-center
-        >
+          <v-layout column wrap class="my-5" align-center>
           <v-flex xs12 sm4 class="my-3">
             <div class="text-xs-center">
               <h2 class="headline">What do we do?</h2>
@@ -64,8 +49,10 @@
                     </v-card-title>
                     <v-card-text>
                       With a wide range of services that suit your every need and requirement,
-                      We at 24Hr Service have the know-how and the expertise to get the job done! Let us know how we can help,and we will guarantee
-                      your experience with our professionals is enjoyable and satisfactory. We love to hear from our costumers, so feel free to
+                        We at 24Hr Service have the know-how and the expertise to get the job done! Let us know how we can
+                        help,and we will guarantee
+                        your experience with our professionals is enjoyable and satisfactory. We love to hear from our
+                        costumers, so feel free to
                       contact us with your feedback!
                     </v-card-text>
                   </v-card>
@@ -79,8 +66,10 @@
                       <div class="headline">Based in Socal</div>
                     </v-card-title>
                     <v-card-text>
-                      Skip your search for house painters near you; contact the professional and industry experts . We serve the communities
-                      in Los Angeles, Thousand Oaks, Ventura, and neighboring cities in California. Contact us today to have the experts
+                        Skip your search for house painters near you; contact the professional and industry experts . We
+                        serve the communities
+                        in Los Angeles, Thousand Oaks, Ventura, and neighboring cities in California. Contact us today to
+                        have the experts
                       handle your exterior painting in summer.
                     </v-card-text>
                   </v-card>
@@ -94,8 +83,10 @@
                       <div class="headline text-xs-center">Exterior House Painting</div>
                     </v-card-title>
                     <v-card-text>
-                      Many homeowners wonder when the best time of year is to schedule exterior painting projects. While exterior painting
-                      can be done at nearly any time during the year (under the right conditions), the warmer months are usually the best
+                        Many homeowners wonder when the best time of year is to schedule exterior painting projects. While
+                        exterior painting
+                        can be done at nearly any time during the year (under the right conditions), the warmer months are
+                        usually the best
                       time to take care of outdoor projects – including exterior painting in summer!
                     </v-card-text>
                   </v-card>
@@ -108,14 +99,13 @@
 
       <section>
         <v-layout>
-          <v-flex xs12 sm8 offset-sm2>
+            <v-flex xs12 sm10 offset-sm1>
             <v-card>
               <v-container grid-list-sm fluid>
                 <v-layout row wrap>
-                  <v-flex v-for="n in 6" :key="n" xs4 d-flex>
-                    <v-card flat tile class="d-flex">
-                      <v-img :src="`./assets/gallery/gallery (${n}).jpg`" :lazy-src="`./assets/gallery/gallery (${n}).jpg`"
-                        aspect-ratio="1" class="grey lighten-2">
+                  <v-flex v-for="n in 9" :key="n" xs4 d-flex>
+                    <v-card class="d-flex">
+                      <v-img :src="`assets/gallery/pic (${n}).jpg`" :max-height="225">
                         <v-layout slot="placeholder" fill-height align-center justify-center ma-0>
                           <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
                         </v-layout>
@@ -154,15 +144,11 @@
       </section>
 
       <section>
-        <v-parallax src="assets/color-paint-cans-dark.jpg" height="400">
+          <v-parallax src="./assets/color-paint-cans-dark.jpg" height="400">
           <v-layout column align-center justify-center>
-            <div class="headline white--text mb-3 text-xs-center">Let us help you with your future painting projects.</div>
-            <v-btn
-              class="blue lighten-2 mt-5"
-              dark
-              large
-              href="/pre-made-themes"
-            >
+              <div class="headline white--text mb-3 text-xs-center">Let us help you with your future painting projects.
+              </div>
+              <v-btn class="blue lighten-2 mt-5" dark large href="/pre-made-themes">
               Create an appointment
             </v-btn>
           </v-layout>
@@ -178,9 +164,12 @@
                   <v-toolbar-title>About</v-toolbar-title>
                 </v-toolbar>
                 <v-card-text>
-                  Fast, friendly, and fully functional, our professional Painting Service is well renowned throughout the San Fernando
-                  area. Our team is up for every job, managing projects with the skill and experience our clients have come to expect. We
-                  always stand behind our work, with customer satisfaction being our #1 priority. Contact us to learn more about our
+                    Fast, friendly, and fully functional, our professional Painting Service is well renowned throughout the
+                    San Fernando
+                    area. Our team is up for every job, managing projects with the skill and experience our clients have
+                    come to expect. We
+                    always stand behind our work, with customer satisfaction being our #1 priority. Contact us to learn more
+                    about our
                   incredible staff and how they can help you!
 
                 </v-card-text>
@@ -190,19 +179,9 @@
                   <v-container>
                     <v-layout justify-center>
                       <v-flex xs12>
-                        <v-tooltip 
-                          bottom
-                          v-for="icon in icons">
-                          <v-btn
-                            :href="icon.url"
-                            :color="icon.color"
-                            target="blank"
-                            class="elevation-5"
-                            slot="activator"
-                            flat
-                            fab
-                            dark
-                          >
+                        <v-tooltip bottom v-for="icon in icons">
+                          <v-btn :href="icon.url" :color="icon.color" target="blank" class="elevation-5" slot="activator"
+                            fab dark>
                             <i :class="icon.name"></i>
                           </v-btn>
                           <span>{{icon.tooltip}}</span>
@@ -218,48 +197,48 @@
                     <v-toolbar dark class="blue darken-2">
                       <v-toolbar-title>Contact Information</v-toolbar-title>
                     </v-toolbar>
-                    <v-list-tile @click="">
-                      <v-list-tile-action>
+                    <v-list-item @click="">
+                      <v-list-item-action>
                         <v-icon color="indigo">phone</v-icon>
-                      </v-list-tile-action>
+                      </v-list-item-action>
                   
-                      <v-list-tile-content>
-                        <v-list-tile-title>(818) 647-5638</v-list-tile-title>
-                        <v-list-tile-sub-title>Work</v-list-tile-sub-title>
-                      </v-list-tile-content>
+                      <v-list-item-content>
+                        <v-list-item-title>(818) 647-5638</v-list-item-title>
+                        <v-list-item-subtitle>Work</v-list-item-subtitle>
+                      </v-list-item-content>
                   
-                      <v-list-tile-action>
+                      <v-list-item-action>
                         <v-icon>chat</v-icon>
-                      </v-list-tile-action>
-                    </v-list-tile>
+                      </v-list-item-action>
+                    </v-list-item>
 
                     <v-divider inset></v-divider>
                   
-                    <v-list-tile @click="">
-                      <v-list-tile-action>
+                    <v-list-item @click="">
+                      <v-list-item-action>
                         <v-icon color="indigo">mail</v-icon>
-                      </v-list-tile-action>
+                      </v-list-item-action>
                   
-                      <v-list-tile-content>
-                        <v-list-tile-title>javierlopezfredy199@gmail.com</v-list-tile-title>
-                        <v-list-tile-sub-title>Personal</v-list-tile-sub-title>
-                      </v-list-tile-content>
-                    </v-list-tile>
+                      <v-list-item-content>
+                        <v-list-item-title>javierlopezfredy199@gmail.com</v-list-item-title>
+                        <v-list-item-subtitle>Personal</v-list-item-subtitle>
+                      </v-list-item-content>
+                    </v-list-item>
                 
                   
                     <v-divider inset></v-divider>
                   
-                    <v-list-tile @click="">
-                      <v-list-tile-action>
+                    <v-list-item @click="">
+                      <v-list-item-action>
                         <v-icon color="indigo">location_on</v-icon>
-                      </v-list-tile-action>
+                      </v-list-item-action>
                   
-                      <v-list-tile-content>
-                        <v-list-tile-title>15113 Burton St</v-list-tile-title>
-                        <v-list-tile-sub-title>Los Angeles, CA 91402
-                        Panorama City</v-list-tile-sub-title>
-                      </v-list-tile-content>
-                    </v-list-tile>
+                      <v-list-item-content>
+                        <v-list-item-title>15113 Burton St</v-list-item-title>
+                        <v-list-item-subtitle>Los Angeles, CA 91402
+                          Panorama City</v-list-item-subtitle>
+                      </v-list-item-content>
+                    </v-list-item>
                   </v-list>
               </v-card>
             </v-flex>
@@ -309,6 +288,7 @@
  <script>
    new Vue({
     el: '#app',
+    vuetify: new Vuetify(),
     data () {
       return {
         title: '24HrPaintingServices',
